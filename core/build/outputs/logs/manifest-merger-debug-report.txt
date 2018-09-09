@@ -1,0 +1,100 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:2:1-47:12
+MERGED from [:SPD-classes] C:\Users\me\Desktop\shattered-pixel-dungeon-master\SPD-classes\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-14:12
+INJECTED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:2:1-47:12
+	package
+		ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:3:2-52
+		INJECTED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:5:2-30
+		INJECTED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:4:2-27
+		INJECTED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml
+	android:installLocation
+		ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:6:2-32
+uses-sdk
+ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:8:2-10:34
+MERGED from [:SPD-classes] C:\Users\me\Desktop\shattered-pixel-dungeon-master\SPD-classes\build\intermediates\manifests\full\debug\AndroidManifest.xml:5:5-43
+MERGED from [:SPD-classes] C:\Users\me\Desktop\shattered-pixel-dungeon-master\SPD-classes\build\intermediates\manifests\full\debug\AndroidManifest.xml:5:5-43
+	android:targetSdkVersion
+		ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:10:3-32
+	android:minSdkVersion
+		ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:9:3-28
+uses-feature#0x00020000
+ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:12:2-13:37
+MERGED from [:SPD-classes] C:\Users\me\Desktop\shattered-pixel-dungeon-master\SPD-classes\build\intermediates\manifests\full\debug\AndroidManifest.xml:9:5-54
+MERGED from [:SPD-classes] C:\Users\me\Desktop\shattered-pixel-dungeon-master\SPD-classes\build\intermediates\manifests\full\debug\AndroidManifest.xml:9:5-54
+	android:glEsVersion
+		ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:13:3-35
+supports-screens
+ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:17:2-21:33
+	android:largeScreens
+		ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:20:3-30
+	android:smallScreens
+		ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:18:3-30
+	android:normalScreens
+		ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:19:3-31
+	android:xlargeScreens
+		ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:21:3-31
+application
+ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:23:2-45:16
+MERGED from [:SPD-classes] C:\Users\me\Desktop\shattered-pixel-dungeon-master\SPD-classes\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-12:19
+MERGED from [:SPD-classes] C:\Users\me\Desktop\shattered-pixel-dungeon-master\SPD-classes\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-12:19
+	android:backupAgent
+		ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:29:3-79
+	android:label
+		ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:25:3-35
+	android:icon
+		ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:24:3-37
+	android:allowBackup
+		ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:27:3-29
+	android:theme
+		ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:26:3-56
+	android:fullBackupOnly
+		ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:28:3-32
+activity#com.shatteredpixel.shatteredpixeldungeon.ShatteredPixelDungeon
+ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:30:3-41:14
+	android:screenOrientation
+		ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:36:4-40
+	android:label
+		ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:31:4-36
+	android:launchMode
+		ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:34:4-39
+	android:configChanges
+		ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:35:4-97
+	android:alwaysRetainTaskState
+		ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:33:4-40
+	android:name
+		ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:32:4-81
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:37:4-40:20
+action#android.intent.action.MAIN
+ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:38:5-57
+	android:name
+		ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:38:13-54
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:39:5-65
+	android:name
+		ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:39:15-62
+meta-data#android.max_aspect
+ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:44:3-71
+	android:value
+		ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:44:48-68
+	android:name
+		ADDED from C:\Users\me\Desktop\shattered-pixel-dungeon-master\core\src\main\AndroidManifest.xml:44:14-47
+uses-permission#android.permission.VIBRATE
+ADDED from [:SPD-classes] C:\Users\me\Desktop\shattered-pixel-dungeon-master\SPD-classes\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-66
+	android:name
+		ADDED from [:SPD-classes] C:\Users\me\Desktop\shattered-pixel-dungeon-master\SPD-classes\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:22-63
