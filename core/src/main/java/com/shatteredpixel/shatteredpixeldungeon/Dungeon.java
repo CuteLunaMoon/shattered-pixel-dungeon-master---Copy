@@ -352,14 +352,14 @@ public class Dungeon {
 	}
 	
 	public static boolean shopOnLevel() {
-		return depth == 1 || depth == 2 || depth == 3  ||depth == 4 ||depth == 5|| depth == 11 || depth == 16;
+		return depth == 1 || depth == 2 || depth == 3  ||depth == 4 ||depth == 7|| depth == 11 || depth == 16;
 	}
 
 	public static boolean gardenOnLevel(){
 		return depth == 2||depth ==16;
 	}
     public static boolean clinicLevel(){
-        return depth == 1||depth ==2;
+        return depth == 1;
     }
 	
 	public static boolean bossLevel() {
@@ -370,7 +370,7 @@ public class Dungeon {
 		return depth == 6 || depth == 12 || depth == 17 || depth == 22 || depth ==28 || depth == 35;
 	}
 	public static boolean residenceLevel(){
-		return  depth ==1||depth ==2|| depth ==3||depth ==4||depth ==5;
+		return  depth ==1||depth ==2|| depth ==3||depth ==4;
 	}
 
 
