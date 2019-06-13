@@ -42,15 +42,15 @@ import java.util.ArrayList;
 
 public class Succubus extends Mob {
 	
-	private static final int BLINK_DELAY	= 5;
+	private static final int BLINK_DELAY	= 3;
 	
 	private int delay = 0;
 	
 	{
 		spriteClass = SuccubusSprite.class;
 		
-		HP = HT = 80;
-		defenseSkill = 25;
+		HP = HT = 80+(Dungeon.depth*Random.NormalIntRange(3, 5));;;
+		defenseSkill = 50;
 		viewDistance = Light.DISTANCE;
 		
 		EXP = 12;
@@ -64,7 +64,7 @@ public class Succubus extends Mob {
 	
 	@Override
 	public int damageRoll() {
-		return Random.NormalIntRange( 22, 30 );
+		return Random.NormalIntRange( 44, 60 );
 	}
 	
 	@Override
