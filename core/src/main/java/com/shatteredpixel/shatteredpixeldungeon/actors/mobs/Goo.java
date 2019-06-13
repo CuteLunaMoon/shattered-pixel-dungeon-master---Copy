@@ -52,9 +52,9 @@ import com.watabou.utils.Random;
 public class Goo extends Mob {
 
 	{
-		HP = HT = 10;
+		HP = HT = 500;
 		EXP = 10;
-		defenseSkill = 8;
+		defenseSkill = 1;
 		spriteClass = GooSprite.class;
 
 		loot = new LloydsBeacon();
@@ -69,7 +69,7 @@ public class Goo extends Mob {
 
 	@Override
 	public int damageRoll() {
-		int min = 1;
+		int min = 10;
 		int max = (HP*2 <= HT) ? 15 : 10;
 		if (pumpedUp > 0) {
 			pumpedUp = 0;
