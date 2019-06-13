@@ -134,7 +134,7 @@ public class Yharnamite extends NPC {
 	
 	public String[] TALK_TXT2 ={
 //(0) Hungry Folks 2nd txt
-		" Any luck finding the rations, kind /s?",
+		" Any luck finding the rations, kind adventurer?",
 
 //(1) Female NPC with no quest #1
 		"_No response_",
@@ -194,7 +194,7 @@ public class Yharnamite extends NPC {
 	
 	public String[] TALK_TXT3 ={
 //(0)Hungry folks end txt
-	" Beware of the beast, kind /s",
+	" Beware of the beast, kind adventurer",
 
 //(1) Female NPC with no quest #1
 	" _No response_ ",
@@ -207,7 +207,7 @@ public class Yharnamite extends NPC {
 	" ALARM! ALARM! The outsider is over here!", 
 	
 //Female NPC with no quest #2	
-	" _No response_ ",
+	" Get away from us... ",
 
 //(5) Yharnam brothel, encounter as male
 	"_No response_ ",
