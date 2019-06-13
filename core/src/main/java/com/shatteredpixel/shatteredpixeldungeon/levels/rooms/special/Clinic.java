@@ -198,12 +198,12 @@ public class Clinic extends SpecialRoom {
 		Item rare;
 		switch (Random.Int(5)){
 			case 0:
-				rare = Generator.random( Generator.Category.WAND );
-				rare.level( 0 );
+				rare = Generator.random( Generator.Category.POTION );
+				//rare.level( 0 );
 				break;
 			case 1:  default: {
-				rare = Generator.random(Generator.Category.RING);
-				rare.level(0);
+				rare = Generator.random(Generator.Category.POTION);
+				//rare.level(0);
 				}
 				break;
 			case 3:
