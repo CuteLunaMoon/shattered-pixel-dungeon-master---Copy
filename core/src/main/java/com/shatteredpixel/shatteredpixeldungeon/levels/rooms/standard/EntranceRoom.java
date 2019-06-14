@@ -36,12 +36,12 @@ public class EntranceRoom extends StandardRoom {
 	
 	@Override
 	public int minWidth() {
-		return Math.max(super.minWidth(), 5);
+		return Math.max(super.minWidth()+1, 5);
 	}
 	
 	@Override
 	public int minHeight() {
-		return Math.max(super.minHeight(), 5);
+		return Math.max(super.minHeight()+1, 5);
 	}
 
 	public void paint( Level level ) {
@@ -57,6 +57,13 @@ public class EntranceRoom extends StandardRoom {
 			level.entrance = level.pointToCell(random(2));
 		} while (level.findMob(level.entrance) != null);
 		Painter.set( level, level.entrance, Terrain.ENTRANCE );
+		
+		  for(int i = 0; i < Level.NEIGHBOURS8.length; i++)
+        	{
+        	    if( level.map[level.entrance + Level.NEIGHBOURS8[i]] == Terrain.EMPTY)
+                	level.storage = level.entrance + Level.NEIGHBOURS8[i];
+        	}
+		Painter.set(level, level.storage, Terrain.STORAGE);
 
 		if (Dungeon.depth == 1 && !Document.ADVENTURERS_GUIDE.hasPage(Document.GUIDE_INTRO_PAGE)){
 			int pos;
