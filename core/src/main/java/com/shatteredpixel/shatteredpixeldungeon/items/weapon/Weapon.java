@@ -135,7 +135,7 @@ abstract public class Weapon extends KindOfWeapon {
 	
 	@Override
 	public void restoreFromBundle( Bundle bundle ) {
-		
+		super.restoreFromBundle( bundle );
 		hitsToKnow = bundle.getInt( UNFAMILIRIARITY );
 		enchantment = (Enchantment)bundle.get( ENCHANTMENT );
 		Integer q = bundle.getInt(QUALITY);
@@ -156,7 +156,7 @@ abstract public class Weapon extends KindOfWeapon {
 				quality = itemQuality.Well_Crafted;
 				}break;
 		}
-			super.restoreFromBundle( bundle );
+			
 		//pre-0.6.5 saves
 		if (bundle.contains( "imbue" )){
 			String imbue = bundle.getString( "imbue" );
