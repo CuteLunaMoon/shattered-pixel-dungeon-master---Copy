@@ -149,7 +149,7 @@ abstract public class Weapon extends KindOfWeapon {
 			case 2:{
 				quality = itemQuality.Used;
 				}break;
-            case 3:{
+          		case 3:{
 				quality = itemQuality.Good;
 				}break;
 			case 4:{
@@ -218,14 +218,18 @@ abstract public class Weapon extends KindOfWeapon {
 	
 	public Item upgrade(boolean enchant ) {
 
-
-		if (enchant && (enchantment == null || enchantment.curse())){
-			enchant( Enchantment.random() );
-		} else if (!enchant && Random.Float() > Math.pow(0.9, level())){
-			enchant(null);
+		if (enchant){
+			if (enchantment == null || hasCurseEnchant()){
+				enchant(Enchantment.random());
+			}
+		} else {
+			if (hasCurseEnchant()){
+				if (Random.Int(3) == 0) enchant(null);
+			} else if (level() >= 4 && Random.Float(10) < Math.pow(2, level()-4)){
+				enchant(null);
+			}
 		}
-
-		//enchant( Enchantment.random() );
+		
 		cursed = false;
 		
 		return super.upgrade();
