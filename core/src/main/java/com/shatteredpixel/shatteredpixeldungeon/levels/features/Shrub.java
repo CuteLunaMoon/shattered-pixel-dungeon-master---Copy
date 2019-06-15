@@ -32,6 +32,7 @@ import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.Wraith;
 import com.shatteredpixel.shatteredpixeldungeon.effects.CellEmitter;
 import com.shatteredpixel.shatteredpixeldungeon.effects.Speck;
 import com.shatteredpixel.shatteredpixeldungeon.items.Generator;
+import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Hero;
 
 import com.shatteredpixel.shatteredpixeldungeon.items.food.FriedCarrot;
 import com.shatteredpixel.shatteredpixeldungeon.items.MediKit;
@@ -52,6 +53,7 @@ public class Shrub {
     private static final String TXT_FOUND_BERRIES	= "You found some berries!";
     private static final String TXT_FOUND_NOTHING	= "You found nothing interesting.";
     private static final String TXT_FOUND_READING	= "You found %s";
+
 
     private static final String[] BOOKS = {
 
@@ -123,17 +125,33 @@ public class Shrub {
     };
 
 	public static void examine( int cell ) {
-	
+		Hero ch = Dungeon.hero;
+		if (ch != null) {
+			SandalsOfNature.Naturalism naturalism = ch.buff( SandalsOfNature.Naturalism.class );
+			if (naturalism != null) {
+				if (!naturalism.isCursed()) {
+					naturalismLevel = naturalism.itemLevel() + 1;
+					naturalism.charge();
+				} else {
+					naturalismLevel = -1;
+				}
+			}
+		}
 
           GLog.p(TXT_FOUND_BERRIES);
           int k = Random.Int(3,5);
+		if (naturalismLevel >= 0) {
+		k + = naturalismLevel;
+		}
           WildBerries item = new WildBerries();
           item.quantity = k;
 		if (item.doPickUp( Dungeon.hero )) {
-			GLog.i(" You now have: berries." );
+			GLog.i(" You gather some berries from the shrub" );
 		} else {
 			Dungeon.level.drop( item, Dungeon.hero.pos ).sprite.drop();
 		}
+		
+		
 
             Level.set( cell, Terrain.SHRUB );
 			Dungeon.observe();
