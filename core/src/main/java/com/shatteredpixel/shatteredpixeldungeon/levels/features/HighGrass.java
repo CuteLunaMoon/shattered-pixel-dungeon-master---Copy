@@ -85,12 +85,12 @@ public class HighGrass {
 			if (Random.Int(24 - naturalismLevel*3) <= 3) {
 				level.drop(new Dewdrop(), pos).sprite.drop();
 			}
-			// Wild berries
-			if(Random.Int (50- naturalismLevel*3)<=3){
+			// Wild berries - rare drop
+			if(Random.Int (250- naturalismLevel*3)<=3){
 			level.drop(new WildBerries(), pos).sprite.drop();
 			}
-			//Puffballs
-			if(Random.Int (250- naturalismLevel*3)<=3){
+			//Puffballs - very rare drop
+			if(Random.Int (1000- naturalismLevel*3)<=3){
 			level.drop(new GiantPuffball(), pos).sprite.drop();
 			}
 			
